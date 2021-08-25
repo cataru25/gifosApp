@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Button.css';
 
 function Button({
     className = "",
@@ -8,7 +9,7 @@ function Button({
     return (
         <button 
             type="button" 
-            className={`btn ${className ? `btn-${className}`: ''}`}
+            className={`btn ${className ? `${className}`: ''}`}
             onClick={onClick}
         >
             {children}

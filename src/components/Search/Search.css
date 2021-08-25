@@ -1,0 +1,4 @@
+.btn-search {
+    /* Primer valor es la esquina superior izquierda y así sucesivamente en función del giro del reloj */
+    border-radius: 0 10px 10px 0;
+}
