@@ -44,7 +44,7 @@ function App() {
         setValue={setValue}
         btnDisabled={isSearching || value === ""}
       />
-      {isLoading ? <p>Cargando...</p> : <Results show={show} data={gifsList} />}
+      {isLoading ? <p>Cargando...</p> : <Results data={gifsList} />}
     </div>
   );
 }
