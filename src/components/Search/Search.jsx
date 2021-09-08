@@ -3,15 +3,19 @@ import Button from '../Button/Button';
 import './Search.css';
 
 function Search({
-    onClick
+    onClick,
+    value,
+    setValue,
+    btnDisabled
 }) {
     return (
         <section>
             <form>
-                <input type="text" />
+                <input type="text" value={value} onChange={(e) => setValue(e.target.value)}/>
                 <Button
                     onClick={onClick}
                     className="btn-search"
+                    disabled={btnDisabled}
                 >
                     BUSCAR
                 </Button>
